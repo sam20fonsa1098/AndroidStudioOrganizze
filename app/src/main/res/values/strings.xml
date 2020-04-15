@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">Organizze</string>
+
     <string name="sliderFirst">Organize suas contas \n de onde estiver</string>
     <string name="sliderFisrtDescription">Simples, fácil de usar e grátis</string>
     <string name="sliderSecond">Saiba para onde está indo seu dinhero</string>
@@ -8,4 +9,18 @@
     <string name="sliderThirdDescription">Receba alertas quando quiser</string>
     <string name="sliderFourth">Tudo organizado, no \n celular ou computador</string>
     <string name="sliderFourthDescription">Use no seu smartphone e acessando o \n Organizze pelo site</string>
+
+    <string name="introRegister">Crie a sua conta grátis</string>
+    <string name="introRegisterDescription">Junte-se a mais de meio milhão \n de pessoas e comece já</string>
+    <string name="register">CADASTRE-SE</string>
+    <string name="hasLogin">Já tenho conta</string>
+
+    <string name="registerNameHint">Nome</string>
+    <string name="registerEmailHint">Email</string>
+    <string name="registerPasswordHint">Senha</string>
+    <string name="registerButton">CADASTRAR</string>
+    <string name="registerTerms">Termos de uso</string>
+
+    <string name="loginTitle">Acesse a sua conta</string>
+    <string name="loginButton">Entrar</string>
 </resources>
