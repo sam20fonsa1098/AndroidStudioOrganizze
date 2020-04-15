@@ -9,15 +9,21 @@ import android.view.View;
 import com.example.organizze.R;
 import com.example.organizze.activity.LoginActivity;
 import com.example.organizze.activity.RegisterActivity;
+import com.example.organizze.config.ConfigFirebase;
+import com.google.firebase.auth.FirebaseAuth;
 import com.heinrichreimersoftware.materialintro.app.IntroActivity;
 import com.heinrichreimersoftware.materialintro.slide.FragmentSlide;
 
 public class MainActivity extends IntroActivity {
 
+    private FirebaseAuth firebaseAuth;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        verifyLoginUser();
 
         setButtonBackVisible(false);
         setButtonNextVisible(false);
@@ -55,11 +61,28 @@ public class MainActivity extends IntroActivity {
         );
     }
 
+    @Override
+    protected void onStart() {
+        super.onStart();
+        verifyLoginUser();
+    }
+
     public void buttonLogin(View view){
         startActivity(new Intent(this, LoginActivity.class));
     }
 
     public void clickRegister(View view){
         startActivity(new Intent(this, RegisterActivity.class));
+    }
+
+    public void verifyLoginUser(){
+        firebaseAuth = ConfigFirebase.getFirebaseAuth();
+        if(firebaseAuth.getCurrentUser() != null) {
+            openHome();
+        }
+    }
+
+    public void openHome() {
+        startActivity(new Intent(this, HomeActivity.class));
     }
 }
