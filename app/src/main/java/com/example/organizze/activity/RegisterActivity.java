@@ -11,6 +11,7 @@ import android.widget.Toast;
 
 import com.example.organizze.R;
 import com.example.organizze.config.ConfigFirebase;
+import com.example.organizze.helper.Base64Custom;
 import com.example.organizze.model.User;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -74,6 +75,9 @@ public class RegisterActivity extends AppCompatActivity {
                 @Override
                 public void onComplete(@NonNull Task<AuthResult> task) {
                     if(task.isSuccessful()){
+                        String idUser = Base64Custom.encodeBase64(user.getEmail());
+                        user.setIdUser(idUser);
+                        user.save();
                         finish();
                     }
                     else{
