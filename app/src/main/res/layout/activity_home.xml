@@ -21,6 +21,12 @@
 
     </com.google.android.material.appbar.AppBarLayout>
 
+
+    <include
+        layout="@layout/activity_home_include"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></include>
+
     <com.github.clans.fab.FloatingActionMenu
         android:id="@+id/menu"
         android:layout_width="wrap_content"
@@ -54,7 +60,6 @@
 
 
     </com.github.clans.fab.FloatingActionMenu>
-
 
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

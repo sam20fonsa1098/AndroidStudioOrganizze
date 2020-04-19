@@ -9,8 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activity.ReceitasActivity" android:theme="@style/receitaTheme"></activity>
-        <activity android:name=".activity.DespesaActivity"  android:theme="@style/despesaTheme"/>
+        <activity android:name=".activity.HomeIncludeActivity"></activity>
+        <activity
+            android:name=".activity.ReceitasActivity"
+            android:theme="@style/receitaTheme" />
+        <activity
+            android:name=".activity.DespesaActivity"
+            android:theme="@style/despesaTheme" />
         <activity
             android:name=".activity.HomeActivity"
             android:label="@string/title_activity_home"
