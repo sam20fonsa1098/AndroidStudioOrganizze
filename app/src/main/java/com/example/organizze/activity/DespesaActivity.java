@@ -63,6 +63,7 @@ public class DespesaActivity extends AppCompatActivity {
 
             updateDespesa(newDespesa + currentDespesa);
             moviment.save();
+            finish();
         }
     }
 

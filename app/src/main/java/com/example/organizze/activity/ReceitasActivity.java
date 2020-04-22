@@ -62,6 +62,7 @@ public class ReceitasActivity extends AppCompatActivity {
 
             updateReceita(newReceita + currentReceita);
             moviment.save();
+            finish();
         }
     }
 

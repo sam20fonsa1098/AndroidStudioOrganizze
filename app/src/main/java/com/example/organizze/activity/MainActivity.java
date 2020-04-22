@@ -77,7 +77,7 @@ public class MainActivity extends IntroActivity {
 
     public void verifyLoginUser(){
         firebaseAuth = ConfigFirebase.getFirebaseAuth();
-        firebaseAuth.signOut();
+//        firebaseAuth.signOut();
         if(firebaseAuth.getCurrentUser() != null) {
             openHome();
         }

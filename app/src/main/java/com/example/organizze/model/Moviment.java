@@ -16,6 +16,7 @@ public class Moviment {
     private String description;
     private Double money;
     private String type;
+    private String key;
 
     public Moviment(String date, String category, String description, double money, String type) {
         this.date = date;
@@ -23,6 +24,14 @@ public class Moviment {
         this.description = description;
         this.money = money;
         this.type  = type;
+    }
+
+    public String getKey() {
+        return key;
+    }
+
+    public void setKey(String key) {
+        this.key = key;
     }
 
     public String getType() {

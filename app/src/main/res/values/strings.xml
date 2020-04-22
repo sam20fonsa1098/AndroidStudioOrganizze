@@ -38,4 +38,6 @@
     <string name="exampleCategoryHint">Categoria</string>
     <string name="exampleDescriptionHint">Descrição</string>
 
+    <string name="toolbarHomeTitle">Sair</string>
+
 </resources>
